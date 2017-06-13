@@ -1,2 +1,2 @@
 # blockedu.io
-blockEDU website
+Block EDU website

@@ -1,0 +1,50 @@
+Decentralized
+
+- No unnecessary institutional fees
+- Non-profit business model
+- Uncensorable course material
+- Knowledge as a social construct.
+
+Records and Reputation
+
+- Privately owned encrypted records
+- Students choose where to share
+- Public reputation for course professionals
+- Build reputation that matters to your community
+
+Flexibility
+
+- Customizable curriculum
+- Small Private Online Course (SPOC) option
+- Students choose courses tailored to their learning type
+- Relevant feedback on non-multiple choice based exams
+- Enable teachers to adjust their beliefs about students
+
+International and Local
+
+- Global teachers and students
+- No language or translation barriers
+- Establish local learning locations
+- Collaborative learning possible
+
+------------------------------------------
+
+Distributed Tech Stack
+
+- Built with the latest web 3.0 technologies
+
+IPFS
+
+- Permanent content addressed course material
+
+Ethereum
+
+- Blockchain based payment processing
+- immutable decentralized authority
+- Smart contract based reputation (Uport)
+
+Storj
+
+- Redundant course material backups
+- Fully encrypted records
+- Provably retrievable information
