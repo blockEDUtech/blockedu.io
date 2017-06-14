@@ -137,12 +137,12 @@ html {
 }
 
 .large-point {
-  height: 260px;
+  height: 280px;
   padding: 2rem 0 1rem 1rem;
   display: flex;
   flex-wrap: wrap;
-  max-width: 350px;
-  min-width: 350px;
+  max-width: 280px;
+  min-width: 280px;
   margin: 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -159,6 +159,7 @@ html {
   text-align: left;
   width: 100%;
   margin-bottom: 4.5rem;
+  line-height: 130%;
 }
 
 .large-point--list > li {
