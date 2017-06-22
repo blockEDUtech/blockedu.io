@@ -12,7 +12,7 @@ BlockEDU is an alternative education platform and free--and open source--course 
 
 1 Introduction
 
-Alternative forms of education enabled by the web have become a popular industry in the past decade as students face increasing tutuion rates and the inablity to afford traditional universities. Current instutions have too many auxilary fees that don't benefit the student such as atheletic and adminsistrative fees. With MOOCs you do not need to be geographically close to your institution of learning. As long as the acedemic community has an internet connection and a cursory knowledge of technology they may connect with each other to advance knowledge. Institutions such as Udacity, edX, and Coursera have seen tremendus success as a perhaps viable way of spreading mass education at an affordable price. They promise to offer affordable and accessible information to those who otherwise would not have had a chance to learn. They project themselves toward Goal 4 of the 2030 Agenda for Sustainable Development where the UN has envisioned a way to ensure inclusive and quality education for all and promote lifelong learning.
+Alternative forms of education enabled by the web have become a popular industry in the past decade as students face increasing tutuion rates and the inablity to afford traditional universities. Current instutions have too many auxilary fees that don't benefit the student such as atheletic and adminsistrative fees. With MOOCs you do not need to be geographically close to your institution of learning. As long as the acedemic community has an internet connection and a cursory knowledge of technology they may connect with each other to advance knowledge. Institutions such as Udacity, edX, and Coursera have seen success as a perhaps viable way of spreading mass education at an affordable price. They promise to offer affordable and accessible information to those who otherwise would not have had a chance to learn. They project themselves toward Goal 4 of the 2030 Agenda for Sustainable Development where the UN has envisioned a way to ensure inclusive and quality education for all and promote lifelong learning.
 
 1.1 Perceived Problems
 
@@ -22,19 +22,27 @@ The ability to use the web to generate mass profit from the crowd is potentially
 
 MOOCs lack a flexibilty that allows the community to decide how coureses should be structured. Some Universities have expressed concern that the massive nature of MOOCs or the need for those involved to understand technology or a lack of a stong sequenced structure makes them unacceptable. They often forget about foreign language speakers and only cater to English as they are not able to coordinate on a local level. These MOOC systems fail to explore the difficulties of relevance and knowledge transfer across boarders. 
 
+While seeminly good ideas such as open edx exist, they are technically complicated to for educators to run and encourage profit to be driven to experts such as edx to set them up. Furthermore, these systems encourage advertisement as another method of monotization. There are many repositories in the open edx organizatio dedicated to installing and running services that advertise to students, and teachers. These repositories make it harder for those trying to run and install an opend edx system as they increase the complexity of deployment, and the cost of maintaining these code bases.
+
 
 
 1.2 Proposed Solution
-
-While seeminly good ideas such as open edx exist, they are technically complicated to for educators to run and encourage profit to be driven to experts such as edx to set them up.
 
 BlockEDU puts forth an idea that using decentralized technologies can enforce a non-profit model that is self sustaining. Peer-to-peer education will ensure that the community always forms the organization. There will be no centralized authority to dictate how a course should be sized, scheduled, or monetized. Each community member will have the ability to use a system permentaly printed in an immutable ledger that was once used only for financial transactions. Auxilaray p2p systems will offset some the of the costs associated with "blockchains". Privacy and a lack of cencorship are built in to the systems used so that courses will never be limited to the constructs of a few, but rather molded by the masses. Just as massive course structures will be possible so will small localized communites. Ultmately the members of this community get to determine where they belong and what works best for them.
 
 2. Design
 
-BlockEDU will use a combination of the most applicalble decentralized technologies. As these technolgies come into being and work out their growing pains blockEDU will retain the ability to shift its underlying tech stack to that of the best suited. We will begin creating the system by using what is currently available as of the time of writing this whitepaper draft.
+BlockEDU will use a combination of the most applicable decentralized technologies. As these technolgies come into being and work out their growing pains blockEDU will retain the ability to shift its underlying tech stack to that of the best suited. We will begin creating the system by using what is currently available as of the time of writing this whitepaper draft.
 
-2.1 Overview
+2.1 Overview of Current Stack
+
+The stack decided for the alpha release of blockedu will be comprised of Ethereum payment processing and smart contracts, IPFS/SWARM content addressing, and SWARM storage. 
+
+Ethereum was chosen as the permissions layer of blockedu because of its ... Ethereum is a worldwide distributed super computer...
+
+The Interplanetary Filesystem has been chosen to offset the costs of storing data in a blockchain, as all operations in Ethereum, especially storage cost money. IPFS is...
+
+SWARM has been chosen as the storage provider to perform provably retrievable data. Swarm promises to be a cheaper solution to traditional Amazon or Google cloud storage.
 
 2.2 Ethereum
 
@@ -73,7 +81,7 @@ a unique description that is searchable by the frontend of the CMS inorder for s
 
 2.3 IPFS / Swarm
 
-The Interplanetary File system or ethereum swarm system will serve as content addressing netowrk that allows for the offest of on cahin data storgae.
+The Interplanetary File system or ethereum swarm system will serve as content addressing network that allows for the offest of on cahin data storgae.
 
 2.3.1 Immutable data pointers
 
@@ -91,11 +99,18 @@ All the listed systems use some form of auditing to ensure that files remain in 
 
 The student records of their scores on all exams and total course grades will also be kept on these provably retrivable systems. All of these systems encrypt the data that they store so the student will retain ful lcontrol over who sees their success or faulures.
 
+3. Frontend Applicatin Framework
+
+Javascript will be used as an easy deployment language for the frontend and VUE has been chosen as the framework to build the application. 
+
 3. Access
 
 Not everyone can be expected to be able to understand how to use peer-to-peer technologies in their current state. A non-profit organaztion will be formed to help address this problem. POssible centralized services that will need to be provided for a time are fiat payment processing, full-node services such as infura that are able to run the open RPC clients for Eth, IPFS, and Storj, and the application server that will serve the javascript CMS client.
 
 There is no traditional business model to sustain this so alternatives will be explored. From selling t-shirts and taking donations to distributions of organizationed owned ERC20 tokens.
+
+
+// DO NOT PUT THIS IN THE WHITE PAPER FUCK TOKENS
 
 3.1 EDU Tokens
 
