@@ -143,7 +143,7 @@ Not everyone can be expected to be able to understand how to use peer-to-peer te
 
 
 
-// DO NOT PUT THIS IN THE WHITE PAPER FUCK TOKENS
+// This will describe the use of tokens in the system. All business logic and funding models will be left to the website itself
 
 There is no traditional business model to sustain this so alternatives will be explored. From selling t-shirts and taking donations to distributions of organizationed owned ERC20 tokens.
 
