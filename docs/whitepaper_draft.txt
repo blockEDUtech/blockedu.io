@@ -142,12 +142,13 @@ Not everyone can be expected to be able to understand how to use peer-to-peer te
 
 
 
+3.1 EDU Tokens
 
-// This will describe the use of tokens in the system. All business logic and funding models will be left to the website itself
+EDU tokens are an ERC20 standard Ethereum token. These token will be used to represent a unit of having participated in consensus on the reputation system for educators. They will provide a store of wealth that reflects voters interest in the decentralized organization. They will also be the payment mechanism by which courses are bought and sold.
+
+// This will describe the use of tokens in the system. All business logic and funding models will be left to the website itself. Move the following to the site
 
 There is no traditional business model to sustain this so alternatives will be explored. From selling t-shirts and taking donations to distributions of organizationed owned ERC20 tokens.
-
-3.1 EDU Tokens
 
 Tokens will be used as the initial and limited continued funding model of this non-profit. The initial sale will be used to fund development to MVP. As all systems require maintainence the non-profit will hold an excess of tokens not sold for future sales to fund further improvements and development. 
 
