@@ -22,11 +22,9 @@ However, just as there are weaknesses inheret in the current web such as central
 
 1.1 a
 
-The ability to use the web to generate mass profit from the crowd is potentially one of the largest weaknesses presented by traditional MOOCs. There is often a lack of small class sizes and diversity in scope that cater to all types of learning. Without the ablility to create personal interactions between educators and students there are large incompletion rates and only a select few that will succeed from MOOCs. Others will drop off and lose money to a for-profit institution. Large class sizes also limit the ability of the educator to learn better ways of structuring their courses in the future. Personal feedback is a valubale resource for both educator and student.
+The ability to use the web to generate mass profit from the crowd is potentially one of the largest weaknesses presented by traditional MOOCs. There is often a lack of small class sizes and diversity in scope that cater to all types of learning. Without the ablility to create personal interactions between educators and students there are large incompletion rates and only a select few that will succeed from MOOCs. Others will drop off and lose money to a for-profit institution. Large class sizes also limit the ability of the educator to learn better ways of structuring their courses in the future. Teachers often report that personal feedback is a valubale resource for both educator and student.
 
-A case example of the value of personal feedback can be found in teachers and researched beliefs about the development of algebraic reasoning. In this example the teachers must organize their mathematics testing and problem sets by their predicted difficulty for students. Textbooks sometimes are not a reliable source for this reasoning. "The Symbol Precedence Model of development of algebraic
-reasoning, in which symbolic problem solving precedes verbal problem solving and
-arithmetic skills strictly precede algebraic skills, was contrasted with the Verbal Precedence Model of development, which provided a better quantitative fit of students’ performance data."
+A case example of the value of personal feedback can be found in teachers and researched beliefs about the development of algebraic reasoning. In this example the teachers must organize their mathematics testing and problem sets by their predicted difficulty for students. Textbooks sometimes are not a reliable source for this reasoning. "The Symbol Precedence Model of development of algebraic reasoning, in which symbolic problem solving precedes verbal problem solving and arithmetic skills strictly precede algebraic skills, was contrasted with the Verbal Precedence Model of development, which provided a better quantitative fit of students’ performance data."
 
 1.1 b
 
@@ -138,7 +136,7 @@ The student records of their scores on all exams and total course grades will al
 
 6. Frontend Applicatin Framework
 
-Javascript will be used as an easy deployment language for the frontend and VUE has been chosen as the framework to build the application.
+Javascript has been chosen as an easy deployment language for the frontend and VUE has been chosen as the framework to build the application. Since single page javascript applications can be sent over the wire with all of the tools needed to run and interact with courses, we found that it was a natural fit for the goals of blockEDU.
 
 6.1 Vue
 
