@@ -20,7 +20,15 @@ Alternative forms of education enabled by the web have become a popular industry
 
 However, just as there are weaknesses inheret in the current web such as centralization, broken information links, security and privacy concerns, there are weaknesses in the current online education systems provided by centralized organizations. Organizations that once started with a non-profit business model have inevietably moved towards instutionalization, advertising and profit. 
 
+1.1 a
+
 The ability to use the web to generate mass profit from the crowd is potentially one of the largest weaknesses presented by traditional MOOCs. There is often a lack of small class sizes and diversity in scope that cater to all types of learning. Without the ablility to create personal interactions between educators and students there are large incompletion rates and only a select few that will succeed from MOOCs. Others will drop off and lose money to a for-profit institution. Large class sizes also limit the ability of the educator to learn better ways of structuring their courses in the future. Personal feedback is a valubale resource for both educator and student.
+
+A case example of the value of personal feedback can be found in teachers and researched beliefs about the development of algebraic reasoning. In this example the teachers must organize their mathematics testing and problem sets by their predicted difficulty for students. Textbooks sometimes are not a reliable source for this reasoning. "The Symbol Precedence Model of development of algebraic
+reasoning, in which symbolic problem solving precedes verbal problem solving and
+arithmetic skills strictly precede algebraic skills, was contrasted with the Verbal Precedence Model of development, which provided a better quantitative fit of students’ performance data."
+
+1.1 b
 
 MOOCs lack a flexibilty that allows the community to decide how coureses should be structured. Some Universities have expressed concern that the massive nature of MOOCs or the need for those involved to understand technology or a lack of a stong sequenced structure makes them unacceptable. They often forget about foreign language speakers and only cater to English as they are not able to coordinate on a local level. These MOOC systems fail to explore the difficulties of relevance and knowledge transfer across boarders. 
 
@@ -28,7 +36,7 @@ While seeminly good ideas such as open edx exist, they are technically complicat
 
 1.2 Proposed Solution
 
-BlockEDU puts forth an idea that using decentralized technologies can enforce a non-profit model that is self sustaining. Peer-to-peer education will ensure that the community always forms the organization. There will be no centralized authority to dictate how a course should be sized, scheduled, or monetized. Each community member will have the ability to use a system permentaly printed in an immutable ledger that was once used only for financial transactions. Auxilaray p2p systems will offset some the of the costs associated with "blockchains". Privacy and a lack of cencorship are built in to the systems used so that courses will never be limited to the constructs of a few, but rather molded by the masses. Just as massive course structures will be possible so will small localized communites. Ultmately the members of this community get to determine where they belong and what works best for them.
+BlockEDU puts forth an idea that using decentralized technologies can enforce a non-profit model that is self sustaining. The possibility of peer-to-peer education will ensure that the community always forms an organization. There will be no centralized authority to dictate how a course should be sized, scheduled, or monetized. Each community member will have the ability to use a system permentaly printed in an immutable ledger that was once used only for financial transactions. Auxilaray p2p systems will offset some the of the costs associated with "blockchains". Privacy and a lack of cencorship are built in to the systems used so that courses will never be limited to the constructs of a few, but rather molded by the masses.  Choice is the core tenant of blockEDU and if other organizations are not comforatable creating a new community, they may choose to establish a more traditional centralized and permissioned university role. Just as massive course structures will be possible so will small localized communites. Ultmately the members of this community get to determine where they belong and what works best for them.
 
 
 
