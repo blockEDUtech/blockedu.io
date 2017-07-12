@@ -1,2 +1,5 @@
 node_modules
 .DS_Store
+css/grayscale.min.css
+js/grayscale.min.js
+
