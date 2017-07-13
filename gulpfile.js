@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var less = require('gulp-less');
+var stylus = require('gulp-stylus');
 var browserSync = require('browser-sync').create();
 var header = require('gulp-header');
 var cleanCSS = require('gulp-clean-css');
@@ -9,12 +10,22 @@ var pkg = require('./package.json');
 
 // Set the banner content
 var banner = ['/*!\n',
-    ' * BlockEDU - <%= pkg.title %> v<%= pkg.version %> (<%= pkg.homepage %>)\n',
-    ' * Copyright 2017-' + (new Date()).getFullYear(), ' <%= pkg.author %>\n',
-    ' * Licensed under <%= pkg.license.type %> (<%= pkg.license.url %>)\n',
-    ' */\n',
-    ''
+  ' * BlockEDU - <%= pkg.title %> v<%= pkg.version %> (<%= pkg.homepage %>)\n',
+  ' * Copyright 2017-' + (new Date()).getFullYear(), ' <%= pkg.author %>\n',
+  ' * Licensed under <%= pkg.license.type %> (<%= pkg.license.url %>)\n',
+  ' */\n',
+  ''
 ].join('');
+
+
+gulp.task('stylus', function(){
+  return gulp.src('stylus/grayscale.styl')
+    .pipe(stylus())
+    .pipe(header(banner, {pkg: pkg }))
+    .pipe(gulp.dest('css'))
+});
+
+
 
 // Compile LESS files from /less into /css
 gulp.task('less', function() {
