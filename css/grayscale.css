@@ -7,8 +7,8 @@ body {
   width: 100%;
   height: 100%;
   font-family: "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #0e0e0e;
-  background-color: #fff;
+  color: #fff;
+  background-color: #000;
 }
 html {
   width: 100%;
@@ -39,7 +39,7 @@ p {
   }
 }
 a {
-  color: #42DCA3;
+  color: #42dca3;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -47,22 +47,22 @@ a {
 a:hover,
 a:focus {
   text-decoration: none;
-  color: #1d9b6c;
+  color: #24c187;
 }
 .light {
   font-weight: 400;
 }
 .navbar-custom {
   margin-bottom: 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid rgba(255,255,255,0.3);
   text-transform: uppercase;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: black;
+  background-color: #000;
 }
 .navbar-custom .navbar-toggle {
-  color: white;
-  background-color: rgba(255, 255, 255, 0.2);
-  font-size: 12px;
+  padding: 4px 6px;
+  font-size: 16px;
+  color: #fff;
 }
 .navbar-custom .navbar-toggle:focus,
 .navbar-custom .navbar-toggle:active {
@@ -75,7 +75,7 @@ a:focus {
   outline: none;
 }
 .navbar-custom a {
-  color: white;
+  color: #fff;
 }
 .navbar-custom .nav li a {
   -webkit-transition: background 0.3s ease-in-out;
@@ -83,7 +83,7 @@ a:focus {
   transition: background 0.3s ease-in-out;
 }
 .navbar-custom .nav li a:hover {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255,255,255,0.8);
   outline: none;
   background-color: transparent;
 }
@@ -96,25 +96,16 @@ a:focus {
   outline: none;
 }
 .navbar-custom .nav li.active a {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255,255,255,0.3);
 }
 .navbar-custom .nav li.active a:hover {
-  color: white;
+  color: #fff;
 }
 @media (min-width: 768px) {
-  .navbar-custom {
-    padding: 20px 0;
-    border-bottom: none;
-    letter-spacing: 1px;
-    background: transparent;
-    -webkit-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
-    -moz-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
-    transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
-  }
-  .navbar-custom.top-nav-collapse {
+  .top-nav-collapse {
     padding: 0;
-    background: black;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    background: #000;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
   }
 }
 .intro {
@@ -123,9 +114,9 @@ a:focus {
   height: auto;
   padding: 100px 0;
   text-align: center;
-  color: white;
-  background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
-  background-color: black;
+  color: #fff;
+  background: url("../img/intro-bg.jpg") no-repeat bottom center scroll;
+  background-color: #000;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -142,14 +133,10 @@ a:focus {
   font-size: 18px;
 }
 @media (min-width: 768px) {
-  .intro {
-    height: 100%;
-    padding: 0;
-  }
-  .intro .intro-body .brand-heading {
+  .intro-body .brand-heading {
     font-size: 100px;
   }
-  .intro .intro-body .intro-text {
+  .intro-body .intro-text {
     font-size: 26px;
   }
 }
@@ -158,10 +145,10 @@ a:focus {
   height: 70px;
   margin-top: 15px;
   padding: 7px 16px;
-  border: 2px solid white;
+  border: 2px solid #fff;
   border-radius: 100% !important;
   font-size: 40px;
-  color: white;
+  color: #fff;
   background: transparent;
   -webkit-transition: background 0.3s ease-in-out;
   -moz-transition: background 0.3s ease-in-out;
@@ -170,8 +157,8 @@ a:focus {
 .btn-circle:hover,
 .btn-circle:focus {
   outline: none;
-  color: white;
-  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  background: rgba(255,255,255,0.1);
 }
 .btn-circle i.animated {
   -webkit-transition-property: -webkit-transform;
@@ -189,8 +176,8 @@ a:focus {
   -webkit-animation-timing-function: linear;
   -moz-animation-timing-function: linear;
 }
-@-webkit-keyframes pulse {
-  0% {
+@-webkit-keyframes  {
+  from {
     -webkit-transform: scale(1);
     transform: scale(1);
   }
@@ -203,8 +190,8 @@ a:focus {
     transform: scale(1);
   }
 }
-@-moz-keyframes pulse {
-  0% {
+@-moz-keyframes  {
+  from {
     -moz-transform: scale(1);
     transform: scale(1);
   }
@@ -218,14 +205,14 @@ a:focus {
   }
 }
 .content-section {
-  padding-top: 50px;
+  padding-top: 100px;
 }
 .download-section {
   width: 100%;
   padding: 50px 0;
-  color: white;
-  background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
-  background-color: black;
+  color: #fff;
+  background: url("../img/downloads-bg.jpg") no-repeat center center scroll;
+  background-color: #000;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -238,7 +225,7 @@ a:focus {
 }
 @media (min-width: 767px) {
   .content-section {
-    padding-top: 50px;
+    padding-top: 250px;
   }
   .download-section {
     padding: 100px 0;
@@ -258,16 +245,16 @@ a:focus {
   border-radius: 0;
 }
 .btn-default {
-  border: 1px solid #42DCA3;
-  color: #42DCA3;
+  border: 1px solid #42dca3;
+  color: #42dca3;
   background-color: transparent;
 }
 .btn-default:hover,
 .btn-default:focus {
-  border: 1px solid #42DCA3;
+  border: 1px solid #42dca3;
   outline: none;
-  color: black;
-  background-color: #42DCA3;
+  color: #000;
+  background-color: #42dca3;
 }
 ul.banner-social-buttons {
   margin-top: 0;
@@ -296,12 +283,12 @@ footer p {
 ::-moz-selection {
   text-shadow: none;
   background: #fcfcfc;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255,255,255,0.2);
 }
 ::selection {
   text-shadow: none;
   background: #fcfcfc;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255,255,255,0.2);
 }
 img::selection {
   background: transparent;
@@ -310,30 +297,5 @@ img::-moz-selection {
   background: transparent;
 }
 body {
-  webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
-}
-.white-text {
-  color: #fff;
-}
-.primary-section {
-  background-color: #42DCA3;
-}
-.benefit-text {
-  font-size: 24px;
-}
-.milestone {
-  margin: 10px;
-  padding: 20px;
-  height: 100px;
-  vertical-align: middle;
-  text-align: center;
-  font-size: 20px !important;
-  border: 3px solid #42DCA3;
-  border-radius: 5px;
-}
-.center {
-  margin: 0 auto !important;
-}
-.spacing100 {
-  margin: 100px 0px 100px 0px;
+  -webkit-tap-highlight-color: rgba(255,255,255,0.2);
 }
