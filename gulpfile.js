@@ -1,5 +1,5 @@
 var gulp = require('gulp');
-var less = require('gulp-less');
+var stylus = require('gulp-stylus');
 var browserSync = require('browser-sync').create();
 var header = require('gulp-header');
 var cleanCSS = require('gulp-clean-css');
@@ -9,26 +9,26 @@ var pkg = require('./package.json');
 
 // Set the banner content
 var banner = ['/*!\n',
-    ' * BlockEDU - <%= pkg.title %> v<%= pkg.version %> (<%= pkg.homepage %>)\n',
-    ' * Copyright 2017-' + (new Date()).getFullYear(), ' <%= pkg.author %>\n',
-    ' * Licensed under <%= pkg.license.type %> (<%= pkg.license.url %>)\n',
-    ' */\n',
-    ''
+  ' * BlockEDU - <%= pkg.title %> v<%= pkg.version %> (<%= pkg.homepage %>)\n',
+  ' * Copyright 2017-' + (new Date()).getFullYear(), ' <%= pkg.author %>\n',
+  ' * Licensed under <%= pkg.license.type %> (<%= pkg.license.url %>)\n',
+  ' */\n',
+  ''
 ].join('');
 
-// Compile LESS files from /less into /css
-gulp.task('less', function() {
-    return gulp.src('less/grayscale.less')
-        .pipe(less())
-        .pipe(header(banner, { pkg: pkg }))
-        .pipe(gulp.dest('css'))
-        .pipe(browserSync.reload({
-            stream: true
-        }))
+// compile Stylus files from /stylus into /css
+gulp.task('stylus', function(){
+  return gulp.src('stylus/grayscale.styl')
+    .pipe(stylus())
+    .pipe(header(banner, {pkg: pkg }))
+    .pipe(gulp.dest('css'))
+    .pipe(browserSync.reload({
+      stream: true
+    }))
 });
 
 // Minify compiled CSS
-gulp.task('minify-css', ['less'], function() {
+gulp.task('minify-css', ['stylus'], function() {
     return gulp.src('css/grayscale.css')
         .pipe(cleanCSS({ compatibility: 'ie8' }))
         .pipe(rename({ suffix: '.min' }))
@@ -70,7 +70,7 @@ gulp.task('copy', function() {
 })
 
 // Run everything
-gulp.task('default', ['less', 'minify-css', 'minify-js', 'copy']);
+gulp.task('default', ['stylus', 'minify-css', 'minify-js', 'copy']);
 
 // Configure the browserSync task
 gulp.task('browserSync', function() {
@@ -82,8 +82,8 @@ gulp.task('browserSync', function() {
 })
 
 // Dev task with browserSync
-gulp.task('dev', ['browserSync', 'less', 'minify-css', 'minify-js'], function() {
-    gulp.watch('less/*.less', ['less']);
+gulp.task('dev', ['browserSync', 'stylus', 'minify-css', 'minify-js'], function() {
+    gulp.watch('stylus/*.styl', ['stylus']);
     gulp.watch('css/*.css', ['minify-css']);
     gulp.watch('js/*.js', ['minify-js']);
     // Reloads the browser whenever HTML or JS files change
