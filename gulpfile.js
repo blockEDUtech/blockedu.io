@@ -1,5 +1,4 @@
 var gulp = require('gulp');
-var less = require('gulp-less');
 var stylus = require('gulp-stylus');
 var browserSync = require('browser-sync').create();
 var header = require('gulp-header');
