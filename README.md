@@ -1,22 +1,28 @@
-# BlockEDU 
-> Main website 
+# BlockEDU
+> Main website
 
-## Development 
+## Development
 
-Clone the repo, and install dependencies 
+Clone the repo, and install dependencies
 
 `$ npm install`
 
 Boot up the development server 
 
-`$ npm run dev` 
+`$ npm run dev`
 
-# Production 
+# Production
 
-To build for production 
+To build for production
 
 `$ npm run build`
 
 To start the server for production ser
 
-`$ npm run start` 
+`$ npm run start`
+
+# Deployment
+
+You need to have `flightplan` installed locally
+
+`$ npm install -g flightplan`

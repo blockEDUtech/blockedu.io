@@ -23,6 +23,7 @@
     "bootstrap": "^3.3.7",
     "browser-sync": "^2.13.0",
     "connect": "^3.6.2",
+    "flightplan": "^0.6.17",
     "font-awesome": "^4.6.3",
     "gulp": "^3.9.1",
     "gulp-clean-css": "^2.0.10",
