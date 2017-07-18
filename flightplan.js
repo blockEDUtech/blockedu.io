@@ -13,7 +13,7 @@ plan.target('prod', {
   agent: process.env.SSH_AUTH_SOCK,
 	webRoot: webRoot,
   ownerUser: 'root',
-  repository: 'https://github.com/blockEDUtech/blockedu.io.gitt',
+  repository: 'https://github.com/blockEDUtech/blockedu.io.git',
   branchName: 'master',
   maxDeploys: 10
 });
