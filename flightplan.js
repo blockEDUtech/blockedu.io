@@ -28,8 +28,7 @@ plan.remote('deploy', function(remote) {
 	remote.with('cd /home/ubuntu/github/blockedu.io', function() {
 		remote.exec('git pull origin master');
 		remote.exec('npm install');
-		remove.exec('gulp');
-		remote.exec('pm2 start server.js');
+		remote.exec('npm run start');
 	});
 });
 
