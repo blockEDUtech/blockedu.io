@@ -28,6 +28,7 @@ plan.remote('deploy', function(remote) {
 	remote.with('cd /home/ubuntu/github/blockedu.io', function() {
 		remote.exec('git pull origin master');
 		remote.exec('npm install');
+		remote.exec('npm run build');
 		remote.exec('npm run start');
 	});
 });
