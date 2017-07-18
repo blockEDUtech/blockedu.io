@@ -8,7 +8,8 @@
     "start": "NODE_ENV=production pm2 start server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "gulp dev",
-    "build": "gulp"
+    "build": "gulp",
+    "check": "fly check:prod"
   },
   "homepage": "https://github.com/nginnever/blockedu.io#readme",
   "author": [
