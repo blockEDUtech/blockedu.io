@@ -1,0 +1,109 @@
+body
+    margin 0
+    padding 0
+    background-color $primary
+
+.box
+    margin 0 10%
+    height 630px
+    overflow hidden
+    padding 10px 0 40px 60px
+    ul
+        list-style-type none
+        margin 0
+        padding 0
+        position relative
+        transition all 0.5s linear
+        top 0
+        &:last-of-type
+            top 80px
+            .arrow
+                position absolute
+                top 105%
+                left 22%
+                transform rotateX(180deg)
+                cursor pointer
+        &:before
+            content ""
+            display block
+            width 0
+            height 100%
+            border 1px solid $white
+            position absolute
+            top 0
+            left 30px
+        li
+            margin 20px 60px 60px
+            position relative
+            padding 10px 20px
+            background rgba(255, 255, 255, 0.3)
+            color $white
+            border-radius 10px
+            line-height 20px
+            width 35%
+            & > span
+                content ""
+                display block
+                width 0
+                height 100%
+                border 1px solid #fff
+                position absolute
+                top 0
+                left -30px
+                &:before
+                    top -10px
+                &:after
+                    top 95%
+    .title
+        text-transform uppercase
+        font-weight 700
+        margin-bottom 5px
+    .info
+        &:first-letter
+            text-transform capitalize
+            line-height 1.7
+    .name
+        margin-top 10px
+        text-transform capitalize
+        font-style italic
+        text-align right
+        margin-right 20px
+    .time
+        span
+            position absolute
+            left -100px
+            color $white
+            font-size 80%
+            font-weight bold
+            &:first-child
+                top -16px
+            &:last-child
+                top 94%
+
+.box ul li > span:before
+    content ""
+    display block
+    width 10px
+    height 10px
+    border-radius 50%
+    background $primary
+    border 2px solid $white
+    position absolute
+    left -5px
+
+.arrow
+    position absolute
+    top 105%
+    left 22%
+    cursor pointer
+    height 20px
+    width 20px
+    &:hover
+        -webkit-animation arrow 1s linear infinite
+        -moz-animation arrow 1s linear infinite
+        -o-animation arrow 1s linear infinite
+        animation arrow 1s linear infinite
+
+svg
+    width 20px
+    height 20px
