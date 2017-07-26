@@ -3,16 +3,19 @@
  * Copyright 2017-2017 Nathan Ginnever,Dylan Lott
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #42dca3;
+#first-last {
+  margin: 0 auto;
 }
 .box {
-  margin: 0 10%;
+  margin: 0 auto;
   height: 630px;
   overflow: hidden;
-  padding: 10px 0 40px 60px;
+  font-size: 26px;
+}
+@media (max-width: 350px) {
+  .box {
+    font-size: 14px;
+  }
 }
 .box ul {
   list-style-type: none;
@@ -21,9 +24,6 @@ body {
   position: relative;
   transition: all 0.5s linear;
   top: 0;
-}
-.box ul:last-of-type {
-  top: 80px;
 }
 .box ul:last-of-type .arrow {
   position: absolute;
@@ -49,8 +49,7 @@ body {
   background: rgba(255,255,255,0.3);
   color: #fff;
   border-radius: 10px;
-  line-height: 20px;
-  width: 35%;
+  line-height: 1.2;
 }
 .box ul li > span {
   content: "";
@@ -86,10 +85,17 @@ body {
 }
 .box .time span {
   position: absolute;
-  left: -100px;
+  left: 50px;
+  margin-top: 7px;
   color: #fff;
-  font-size: 80%;
+  font-size: 16px;
   font-weight: bold;
+}
+@media (max-width: 350px) {
+  .box .time span {
+    font-size: 12px;
+    left: 0px;
+  }
 }
 .box .time span:first-child {
   top: -16px;

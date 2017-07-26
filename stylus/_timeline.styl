@@ -1,13 +1,15 @@
-body
-    margin 0
-    padding 0
-    background-color $primary
+#first-last
+  margin 0 auto
 
 .box
-    margin 0 10%
+    margin 0 auto
     height 630px
     overflow hidden
-    padding 10px 0 40px 60px
+    font-size 26px
+
+    @media(max-width: 350px)
+      font-size 14px
+
     ul
         list-style-type none
         margin 0
@@ -16,7 +18,6 @@ body
         transition all 0.5s linear
         top 0
         &:last-of-type
-            top 80px
             .arrow
                 position absolute
                 top 105%
@@ -39,8 +40,9 @@ body
             background rgba(255, 255, 255, 0.3)
             color $white
             border-radius 10px
-            line-height 20px
-            width 35%
+            line-height 1.2
+            // width 70%
+
             & > span
                 content ""
                 display block
@@ -70,16 +72,19 @@ body
         margin-right 20px
     .time
         span
+            @media(max-width: 350px)
+              font-size: 12px
+              left 0px
             position absolute
-            left -100px
+            left 50px
+            margin-top 7px
             color $white
-            font-size 80%
+            font-size 16px
             font-weight bold
             &:first-child
                 top -16px
             &:last-child
                 top 94%
-
 .box ul li > span:before
     content ""
     display block
