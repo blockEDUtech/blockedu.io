@@ -1,12 +1,15 @@
 'use strict'
 
-var connect = require('connect');
-var serveStatic = require('serve-static');
+var express = require('express');
+var app = express();
+var path = require('path');
 
-var port = process.env.NODE_ENV === 'development' ? 6001 : 3000;
+app.use("/", express.static(__dirname + "/"));
+app.use("/tiff", express.static(__dirname + "/tiff"));
 
-connect()
-  .use(serveStatic(__dirname))
-  .listen(port, function(){
-    console.log('Server running on', port);
-});
+// viewed at http://localhost:8080
+// app.get('/', function(req, res) {
+//     res.sendFile(path.join(__dirname + '/index.html'));
+// });
+
+app.listen(3000);
